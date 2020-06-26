@@ -1,0 +1,63 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaVersion": 2019,
+		"sourceType": "module"
+	},
+	"settings": {
+		"import/core-modules": [
+			"svelte"
+		],
+	},
+	"plugins": [
+		"svelte3",
+		"@typescript-eslint",
+		"prettier"
+	],
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended",
+		"prettier"
+	],
+	"overrides": [
+		{
+			"files": [
+				"**/*.svelte"
+			],
+			"processor": "svelte3/svelte3"
+		}
+	],
+	"rules": {
+		"no-console": "error",
+		"no-var": "error",
+		"indent": [
+			"error",
+			4
+		],
+		"linebreak-style": [
+			"error",
+			"unix"
+		],
+		"quotes": [
+			"error",
+			"single"
+		],
+		"semi": [
+			"error",
+			"always"
+		],
+		"eqeqeq": "error",
+		"comma-dangle": [
+			"error",
+			"always-multiline"
+		],
+		"import/no-mutable-exports": 0,
+		"no-labels": 0,
+		"no-restricted-syntax": 0,
+	}
+}

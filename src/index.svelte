@@ -1,7 +1,7 @@
 <script lang="ts">
-  const a: string = "Svelte",
-    b: string = "Typescript",
-    c: string = "Rollup";
+  const a: string = 'Svelte',
+    b: string = 'Typescript',
+    c: string = 'Rollup'
 </script>
 
 <style lang="scss">
@@ -14,7 +14,7 @@
   }
 
   h1 {
-    font: normal 24pt Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font: normal 24pt Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
     color: dimgray;
     cursor: default;
   }
